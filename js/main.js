@@ -62,7 +62,7 @@ $(function () {
     });
 
     // pjax
-    $(document).pjax('a[target!=_blank]', '.page', {
+    $(document).pjax('a[target!=_blank]:not([href^="#"])', '.page', {
         fragment: '.page',
         timeout: 5000
     });
@@ -89,9 +89,15 @@ $(function () {
     $(function () {
         $('a[href*=\\#]:not([href=\\#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var hash = this.hash;
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
+                    if (window.history && window.history.replaceState) {
+                        window.history.replaceState(null, '', hash);
+                    }
+                    $(".header_wrap").removeClass("menus-open").addClass("menus-close");
+                    $(".nav").removeClass("nav-open").addClass("nav-close");
                     $('html,body').animate({
                         scrollTop: target.offset().top
                     }, 700);

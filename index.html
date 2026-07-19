@@ -23,10 +23,19 @@
         </button>
         <ul class="menus_items">
           <li class="menus_item">
-            <a class="site-page" href="/publication/"> Publications</a>
+            <a class="site-page" href="#about"> About me</a>
           </li>
           <li class="menus_item">
-            <a class="site-page" href="/cv/"> CV</a>
+            <a class="site-page" href="#news"> News</a>
+          </li>
+          <li class="menus_item">
+            <a class="site-page" href="#research-focus"> Research Focus</a>
+          </li>
+          <li class="menus_item">
+            <a class="site-page" href="#professional-activities"> Professional Activities</a>
+          </li>
+          <li class="menus_item">
+            <a class="site-page" href="#positions"> Positions</a>
           </li>
         </ul>
       </div>
@@ -46,10 +55,10 @@
                 <span>Bristol, UK</span>
                 </a>
               </li>
-              <li>
-                <a class="e-social-link" href="mailto:m.liu22@imperial.ac.uk" target="_blank">
+              <li class="email-item">
+                <a class="e-social-link email-link" href="mailto:mengxiang.liu@bristol.ac.uk" target="_blank">
                   <i class="fas fa-envelope" aria-hidden="true"></i>
-                  <span>Email</span>
+                  <span>mengxiang.liu<wbr>@bristol.ac.uk</span>
                 </a>
               </li>
               <li><a class="e-social-link" href="https://www.researchgate.net/profile/Mengxiang-Liu" target="_blank">
@@ -64,9 +73,18 @@
                 </a>
               </li>
             </ul>
-<!--           </div></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><h2 class="page-title"></h2><article><h2 id="About me"><a href="#About me" class="headerlink" title="About me"></a>About me</h2><ul> -->
+            <nav class="table-of-contents" aria-label="Page contents">
+              <h2>On this page</h2>
+              <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#research-focus">Research Focus</a></li>
+                <li><a href="#professional-activities">Professional Activities</a></li>
+                <li><a href="#positions">Positions</a></li>
+              </ul>
+            </nav>
           </div></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><article>
-<h2 id="About me"><a href="#About me" class="headerlink" title="About me"></a>About me</h2><p>
+<h2 id="about"><a href="#about" class="headerlink" title="About me"></a>About me</h2><p>
 I am currently a Lecturer in Cyber-Physical Systems Security at School of Computer Science, University of Bristol. I was an UKRI PostDoctoral Fellow at Department of Electrical and Electronic Engineering, Imperial College London, working with <a href="https://www.imperial.ac.uk/people/f.teng" target="_blank" rel="noopener">Dr. Fei Teng</a> and <a href="https://profiles.imperial.ac.uk/t.parisini" target="_blank" rel="noopener">Prof Thomas Parisini</a>. 
   Prior to that, I was a Research Associate (PostDoc) at School of Electrical and Electronic Engineering, University of Sheffield, working with 
   <a href="https://www.sheffield.ac.uk/acse/department/people/academic/xin-zhang" target="_blank" rel="noopener">Prof. Xin Zhang</a>. 
@@ -77,7 +95,7 @@ I am currently a Lecturer in Cyber-Physical Systems Security at School of Comput
 <hr>
 
       
-<h2 id="News"><a href="#News" class="headerlink" title="News"></a>News</h2><ul>
+<h2 id="news"><a href="#news" class="headerlink" title="News"></a>News</h2><ul>
 <li><strong>[July 2026]</strong> Our <a href="" target="_blank" rel="noopener"> Cyber-Physical End-to-End Resilience Enhancement Perspective </a> has been accepted by Nature Review Electrical Engineering! Thanks to all co-authors!</li></strong></li>
 <li><strong>[June 2026]</strong> Our <a href="" target="_blank" rel="noopener"> Hierarchical Detection-Mitigation Paper </a> has been accepted by IEEE TSG! Thanks to all co-authors!</li></strong></li>
 <li><strong>[June 2026]</strong> Our <a href="https://www.the-innovation.org/article/doi/10.59717/j.xinn-energy.2026.100169" target="_blank" rel="noopener"> Paper </a> has been accepted by The Innovation Energy! Congratulation to Yifan!</li></strong></li>
@@ -104,6 +122,141 @@ I am currently a Lecturer in Cyber-Physical Systems Security at School of Comput
 <li><strong>[March 2023]</strong> One paper titled “<a href="/publication/MetaCom_2023_SubmissionVersion.pdf" target="_blank" rel="noopener">Grid-Metaverse: The Path From Digital Twins and Prototype Tests on DC Microgrids</a>” got accepted in <i>MetaComm 2023</i>!</li>  
 <li><strong>[September 2022]</strong> I obtained my Ph.D. degree! The thesis is "<a href="https://imperiallondon-my.sharepoint.com/:b:/r/personal/ml5822_ic_ac_uk/Documents/PhDThesis.pdf?csf=1&web=1&e=rTGts5" target="_blank" rel="noopener">Proactive Detection and Localization Against Stealthy Attacks in Power Distribution Grid</a>".</li>
 </ul>
+
+<section id="research-focus" class="page-section" aria-labelledby="research-focus-title">
+<h2 id="research-focus-title">Research Focus</h2>
+
+<section class="research-map-section" aria-label="Research overview">
+<p class="research-map-intro">My research focuses on enhancing the cyber resilience of renewable-dominated power grids. The six phases shown below follow the attack lifecycle: each inherits inputs from the preceding phase and passes structured outputs to the next, strengthening the system's cyber resilience as a whole.</p>
+<figure class="research-map">
+  <img src="/img/research-resilience-cycle.png" alt="Cyber-physical resilience research cycle connecting identification, prevention, detection, mitigation, and recovery around central assessment.">
+</figure>
+</section>
+
+<ul class="research-area-list">
+  <li>
+    <h4 id="identification-area">Identification</h4>
+    <p><strong>Description:</strong> Builds a prioritised set of attack scenarios by connecting cyber vulnerabilities and adversary actions to physical-state trajectories, protection responses, and grid-operating constraints. Scenarios are ranked jointly by cyber likelihood, physical consequence, and sensitivity to operating conditions.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <ul class="selected-publications">
+      <li><strong class="author-me">Mengxiang Liu</strong>, Chengcheng Zhao, Ruilong Deng, Peng Cheng, and Jiming Chen, “False Data Injection Attacks and the Distributed Countermeasure in DC Microgrids,” <i>IEEE Transactions on Control of Network Systems</i>, vol. 9, no. 4, pp. 1962–1974, Dec. 2022.</li>
+      <li>Qiliang Jiang, <strong class="author-me">Mengxiang Liu</strong>, and Ruilong Deng, “Vulnerability Assessment of Grid-Forming Inverters to Cyberattacks,” <i>2026 IEEE PES International Meeting (PES IM)</i>, Hong Kong, 2026, pp. 1–5.</li>
+      <li>Rong Guo, <strong class="author-me">Mengxiang Liu</strong>, and Ruilong Deng, “Vulnerability Assessment of High-Voltage Direct Current Transmission Systems to Cyberattacks,” <i>Security and Safety</i>, vol. 4, art. 2025008, 2025.</li>
+      <li>Ze Yu, <strong class="author-me">Mengxiang Liu</strong>, and Mingyang Sun, “Exploring Smart Grid Vulnerability Against Intelligent Inverter Parameter Tampering Attack,” <i>IEEE Transactions on Smart Grid</i>, vol. 16, no. 6, pp. 5541–5555, Nov. 2025.</li>
+      <li>Yifan Liu, <strong class="author-me">Mengxiang Liu</strong>, Wenxuan Ma, Ruilong Deng, Peng Cheng, and Jiming Chen, “Enhancing Cyber Resilience of High-Renewable Power Systems: Threat Pathways and Targeted Countermeasures,” <i>The Innovation Energy</i>, 2026. <a href="https://doi.org/10.59717/j.xinn-energy.2026.100169" target="_blank" rel="noopener">doi:10.59717/j.xinn-energy.2026.100169</a>.</li>
+      <li>Qi Liu, Chengcheng Zhao, <strong class="author-me">Mengxiang Liu</strong>, Ruilong Deng, and Peng Cheng, “Submodularity-Based False Data Injection Attack Strategy in DC Microgrids,” <i>IEEE Transactions on Information Forensics and Security</i>, vol. 20, pp. 2342–2356, 2025.</li>
+      <li>Dongmeng Qiu, <strong class="author-me">Mengxiang Liu</strong>, Rui Zhang, Tianyu Luo, Antonio Griffo, and Xin Zhang, “Cyber-Physical Real-Time Digital Simulation for Cybersecurity Analysis in Microgrids,” <i>IEEE Transactions on Industrial Cyber-Physical Systems</i>, vol. 3, pp. 429–441, 2025.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="prevention-area">Prevention</h4>
+    <p><strong>Description:</strong> Combines cyber controls such as authentication, encryption, segmentation, and patching with physics-based measures such as robust control and preventive redispatch. These measures reduce both attack probability and physical impact while defining the residual-risk envelope passed to detection.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <ul class="selected-publications">
+      <li>Hengye Zhu, <strong class="author-me">Mengxiang Liu</strong>, Binbin Chen, Xin Che, Peng Cheng, and Ruilong Deng, “HoneyJudge: A PLC Honeypot Identification Framework Based on Device Memory Testing,” <i>IEEE Transactions on Information Forensics and Security</i>, vol. 19, pp. 6028–6043, 2024.</li>
+      <li>Bowen Xu, <strong class="author-me">Mengxiang Liu</strong>, Rui Zhong, Ke Zuo, and Ruilong Deng, “Optimal Defense Resource Allocation Considering Nonlinear Attack Cost in Power Systems,” <i>IEEE Transactions on Industrial Informatics</i>, vol. 21, no. 1, pp. 683–692, Jan. 2025.</li>
+      <li>Bowen Xu, <strong class="author-me">Mengxiang Liu</strong>, and Ruilong Deng, “Optimal Defense Resource Allocation in Smart Grid: A Network Partition-Based Approach for Large-Scale Cases,” <i>IEEE Transactions on Smart Grid</i>, vol. 16, no. 6, pp. 5416–5429, Nov. 2025.</li>
+      <li>Wenxuan Ma, Guangrun Hong, <strong class="author-me">Mengxiang Liu</strong>, and Ruilong Deng, “Post-Quantum Security Enhancement for Secondary Control in DC Microgrids,” <i>2026 IEEE PES International Meeting (PES IM)</i>, Hong Kong, 2026.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="detection-area">Detection</h4>
+    <p><strong>Description:</strong> Fuses cyber-layer evidence from logs, network traffic, and endpoints with physics-based checks of voltages, frequencies, power flows, and control responses. It produces time-stamped alerts enriched with the attack type, affected control loops, and projected physical consequences.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <ul class="selected-publications">
+      <li><strong class="author-me">Mengxiang Liu</strong>, Chengcheng Zhao, Zhenyong Zhang, Ruilong Deng, Peng Cheng, and Jiming Chen, “Converter-Based Moving Target Defense Against Deception Attacks in DC Microgrids,” <i>IEEE Transactions on Smart Grid</i>, vol. 13, no. 5, pp. 3984–3996, Sept. 2022.</li>
+      <li><strong class="author-me">Mengxiang Liu</strong>, Chengcheng Zhao, Zhenyong Zhang, and Ruilong Deng, “Explicit Analysis on Effectiveness and Hiddenness of Moving Target Defense in AC Power Systems,” <i>IEEE Transactions on Power Systems</i>, vol. 37, no. 6, pp. 4732–4746, Nov. 2022.</li>
+      <li><strong class="author-me">Mengxiang Liu</strong>, Xin Zhang, Hengye Zhu, Zhenyong Zhang, and Ruilong Deng, “Physics-Aware Watermarking Embedded in Unknown Input Observers for False Data Injection Attack Detection in Cyber-Physical Microgrids,” <i>IEEE Transactions on Information Forensics and Security</i>, vol. 19, pp. 7824–7840, 2024.</li>
+      <li>Sha Peng, <strong class="author-me">Mengxiang Liu</strong>, Li Chai, and Ruilong Deng, “DST-GNN: A Dynamic Spatiotemporal Graph Neural Network for Cyberattack Detection in Grid-Tied Photovoltaic Systems,” <i>IEEE Transactions on Smart Grid</i>, vol. 16, no. 1, pp. 330–343, Jan. 2025.</li>
+      <li>Yawen Xue, Jie Pan, Yangyang Geng, Zeyu Yang, <strong class="author-me">Mengxiang Liu</strong>, and Ruilong Deng, “Real-Time Intrusion Detection Based on Decision Fusion in Industrial Control Systems,” <i>IEEE Transactions on Industrial Cyber-Physical Systems</i>, vol. 2, pp. 143–153, 2024.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="mitigation-area">Mitigation</h4>
+    <p><strong>Description:</strong> Contains detected attacks while minimising disruption to electricity service. Cyber isolation is coordinated with local fallback control, emergency grid support, autonomous inverter derating, and system-level redispatch to stabilise the grid and keep it within a recoverable operating range.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <ul class="selected-publications">
+      <li><strong class="author-me">Mengxiang Liu</strong>, Xin Zhang, Chengcheng Zhao, and Ruilong Deng, “Matrix Coding Enabled Impact Mitigation Against Primary False Data Injection Attacks in Cyber-Physical Microgrids,” <i>IEEE Transactions on Power Systems</i>, vol. 40, no. 4, pp. 3144–3159, July 2025.</li>
+      <li><strong class="author-me">Mengxiang Liu</strong>, Xin Zhang, Rui Zhang, Zhuoran Zhou, Zhenyong Zhang, and Ruilong Deng, “Detection-Triggered Recursive Impact Mitigation Against Secondary False Data Injection Attacks in Cyber-Physical Microgrid,” <i>IEEE Transactions on Smart Grid</i>, vol. 16, no. 2, pp. 1744–1761, Mar. 2025.</li>
+      <li>Yuqi Wang, <strong class="author-me">Mengxiang Liu</strong>, Milijana Odavic, and Xin Zhang, “Robust Unknown Input Observer Based Estimation and Mitigation Against Sensor Spoofing Attacks in Cyber-Physical Microgrids,” <i>IEEE Transactions on Smart Grid</i>, 2026. <a href="https://doi.org/10.1109/TSG.2026.3703593" target="_blank" rel="noopener">doi:10.1109/TSG.2026.3703593</a>.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="recovery-area">Recovery</h4>
+    <p><strong>Description:</strong> Jointly restores cyber services and physical grid functions because communication reconnection, asset trust, feeder re-energisation, and load restoration depend on one another. Co-restoration planning seeks to minimise recovery time while respecting safety constraints, limited resources, incomplete information, and continuing adversarial activity.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <ul class="selected-publications">
+      <li><strong class="author-me">Mengxiang Liu</strong>, Zhuda Chu, and Fei Teng, “Cyber Recovery From Dynamic Load Altering Attacks: Linking Electricity, Transportation, and Cyber Networks,” <i>IEEE Transactions on Information Forensics and Security</i>, vol. 20, pp. 3862–3876, 2025.</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="assessment-area">Assessment</h4>
+    <p><strong>Description:</strong> Quantifies how effectively the preceding phases preserve electricity service during cyber incidents. Coupled cyber-infrastructure, physical-infrastructure, and service-delivery curves measure degradation depth, duration, and the service retained through cyber-physical coordination, while the results feed back to improve every phase.</p>
+    <p class="selected-publications-label"><strong>Selected publications</strong></p>
+    <p class="selected-publications-empty">TBA</p>
+  </li>
+</ul>
+</section>
+
+<section id="professional-activities" class="page-section professional-activities" aria-labelledby="professional-activities-title">
+<h2 id="professional-activities-title">Professional Activities</h2>
+
+<div class="professional-activity-group">
+<h3>Journal Editor</h3>
+<ul>
+<li><strong>Technical Editor</strong>, <i>IEEE Network Magazine</i>, 2026–present.</li>
+<li><strong>Guest Editor</strong>, <i>IEEE Transactions on Industrial Cyber-Physical Systems</i>, Special Collection on “Optimization, Coordination, and Resilience of Cyber-Physical Distributed Energy Resources,” 2025.</li>
+<li><strong>Guest Editor</strong>, <i>Computers, Materials &amp; Continua</i>, Special Issue on “Enhancing IoT Cyber-Resilience: Convergence of AI, Digital Twins, and the Metaverse,” 2024.</li>
+</ul>
+</div>
+
+<div class="professional-activity-group">
+<h3>Conference Special Session Organiser and Chair</h3>
+<ul>
+<li><strong>Co-organiser</strong>, Special Session on “Cybersecurity of the Future DER-based Power Grid,” <i>IEEE ICPS ’23</i>.</li>
+<li><strong>Session Chair</strong>, Regular Session on Cyber-Physical Systems and Security, <i>AIoTSys ’24</i>.</li>
+</ul>
+</div>
+
+<div class="professional-activity-group">
+<h3>Peer Reviewer</h3>
+<ul>
+<li><strong>Journals:</strong> <i><abbr title="IEEE Transactions on Smart Grid">IEEE TSG</abbr></i>, <i><abbr title="IEEE Transactions on Power Systems">IEEE TPS</abbr></i>, <i><abbr title="IEEE Transactions on Control of Network Systems">IEEE TCNS</abbr></i>, <i><abbr title="IEEE Transactions on Industrial Informatics">IEEE TII</abbr></i>, <i><abbr title="IEEE Power Engineering Letters">IEEE PEL</abbr></i>, <i>Automatica</i>, <i><abbr title="IEEE Transactions on Control Systems Technology">IEEE TCST</abbr></i>, <i><abbr title="IEEE Transactions on Cybernetics">IEEE TCYB</abbr></i>, <i><abbr title="IET Generation, Transmission &amp; Distribution">IET GTD</abbr></i>, <i><abbr title="Wireless Networks">Wireless Netw.</abbr></i>, <i><abbr title="IEEE Open Access Journal of Power and Energy">IEEE OAJPE</abbr></i>, <i><abbr title="International Journal of Electrical Power &amp; Energy Systems">IJEPES</abbr></i>, <i>Electronics</i>, <i><abbr title="SN Computer Science">SN Comput. Sci.</abbr></i>, and <i><abbr title="Nature Reviews Electrical Engineering">Nat. Rev. Electr. Eng.</abbr></i>, among others.</li>
+<li><strong>Conferences:</strong> IEEE EPEC, IFAC World Congress, IEEE PES General Meeting, IEEE ACC, IEEE CDC, and IEEE SmartGridComm, among others.</li>
+</ul>
+</div>
+</section>
+
+<section id="positions" class="page-section positions-section" aria-labelledby="positions-title">
+<h2 id="positions-title">Positions</h2>
+<p class="positions-intro">I welcome enquiries from motivated PhD applicants interested in cyber-physical security and resilience for low-carbon power systems.</p>
+
+<div class="position-group">
+<h3>PhD positions</h3>
+<div class="position-content">
+<p>Potential PhD funding routes at the University of Bristol include:</p>
+<ul>
+<li><a href="https://www.bristol.ac.uk/cdt/cyber-security/" target="_blank" rel="noopener">EPSRC Centre for Doctoral Training in Cyber Security</a></li>
+<li><a href="https://www.bristol.ac.uk/science-engineering/postgraduate-research/pgr-scholarships/" target="_blank" rel="noopener">University of Bristol Postgraduate Research Scholarships</a></li>
+<li><a href="https://www.bristol.ac.uk/students/support/finances/scholarships/china-scholarship-council/" target="_blank" rel="noopener">China Scholarship Council–University of Bristol PhD Scholarship</a></li>
+</ul>
+<p>Further opportunities are listed on the <a href="https://www.bristol.ac.uk/students/support/finances/scholarships/?filterfee_status=&amp;filterstudy_stage=&amp;filterstudy_level=&amp;filterstudy_mode=&amp;filterfunding_category=&amp;sort=Title-Asc&amp;page=1" target="_blank" rel="noopener">University of Bristol scholarships and funding page</a>. Please check the relevant pages for current eligibility and deadlines.</p>
+</div>
+</div>
+
+<div class="position-group">
+<h3>How to apply</h3>
+<div class="position-content">
+<p>If you are interested in working with me, please email <a href="mailto:mengxiang.liu@bristol.ac.uk">mengxiang.liu@bristol.ac.uk</a> with:</p>
+<ul>
+<li>Your CV.</li>
+<li>Your academic transcript.</li>
+<li>A brief description of your research interests and how they align with my research focus.</li>
+</ul>
+</div>
+</div>
+</section>
+
 </article>
   </div>
   </main>
@@ -114,10 +267,19 @@ I am currently a Lecturer in Cyber-Physical Systems Security at School of Comput
       </button>
       <ul class="nav_items">
         <li class="nav_item">
-          <a class="nav-page" href="/publication/"> Publications</a>
+          <a class="nav-page" href="#about"> About me</a>
         </li>
         <li class="nav_item">
-          <a class="nav-page" href="/cv/"> CV</a>
+          <a class="nav-page" href="#news"> News</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-page" href="#research-focus"> Research Focus</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-page" href="#professional-activities"> Professional Activities</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-page" href="#positions"> Positions</a>
         </li>
       </ul>
     </div>
@@ -128,6 +290,6 @@ I am currently a Lecturer in Cyber-Physical Systems Security at School of Comput
 <!--     footer#page_footer -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js?v=20260719"></script>
   </body>
 </html>

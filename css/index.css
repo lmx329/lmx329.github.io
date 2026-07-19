@@ -322,7 +322,7 @@ blockquote p {
 #blog_name a:hover {
   color: #000;
 }
-@media (max-width: 34em) {
+@media (max-width: 64em) {
   .menus-open .menus_items {
     visibility: visible;
     opacity: 1;
@@ -403,7 +403,7 @@ blockquote p {
   width: 25px;
   transform: rotate3d(0, 0, 1, -45deg);
 }
-@media (min-width: 34em) {
+@media (min-width: 64.01em) {
   .menus_items {
     display: inline-block;
     list-style-type: none;
@@ -477,12 +477,163 @@ blockquote p {
   font-size: 3rem;
 }
 .page article h2 {
+  color: #494e52;
   font-size: 2.8rem;
+  font-family: inherit;
+  font-weight: 700;
 }
 .page article h3 {
   font-size: 2rem;
   margin-bottom: -20px;
+  color: #494e52;
+}
+.page-section {
+  scroll-margin-top: 2rem;
+  padding-top: 2.4rem;
+  margin-top: 2.4rem;
+  border-top: 1px solid #e5e7e9;
+}
+.page-section h3 {
+  margin-top: 2.4rem;
+}
+.research-map-section {
+  margin: 2.4rem 0 3.2rem;
+}
+.publication-list-title {
+  margin-bottom: 0;
+}
+.research-map-intro {
+  margin: 2.4rem 0 1.6rem;
+}
+.research-map {
+  width: 100%;
+  max-width: 52.6rem;
+  margin: 2.8rem auto 2rem;
+}
+.research-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.research-area-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.6rem 2rem;
+  margin: 2.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.research-area-list > li {
+  position: relative;
+  margin: 0;
+  padding: 1.4rem 1.6rem 1.4rem 3.2rem;
+  border: 1px solid #e1e4e7;
+  background: #f6f7f8;
+}
+.research-area-list > li::before {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
   color: #8c1515;
+  content: "•";
+  font-size: 2.4rem;
+  line-height: 1;
+}
+.research-area-list h4 {
+  margin: 0 0 0.8rem;
+  color: #494e52;
+  font-size: 1.9rem;
+}
+.page article .research-area-list p {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  line-height: 1.45;
+}
+.page article .research-area-list .selected-publications-label {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d9dde1;
+}
+.research-area-list .selected-publications {
+  margin: 0.6rem 0 0;
+  padding-left: 2rem;
+  list-style: disc;
+}
+.page article .research-area-list .selected-publications li {
+  margin: 0.7rem 0;
+  padding-left: 0.2rem;
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+.research-area-list .selected-publications li::marker {
+  color: #8c1515;
+}
+.research-area-list .author-me {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+.page article .research-area-list .selected-publications-empty {
+  margin-top: 0.6rem;
+  color: #62676c;
+  font-style: italic;
+}
+.page article .professional-activities h3 {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+.professional-activities ul {
+  margin: 0.4rem 0 1.8rem;
+  padding-left: 2.2rem;
+}
+.page article .professional-activities li {
+  margin: 0.65rem 0;
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+.professional-activities abbr[title] {
+  cursor: help;
+  text-decoration: none;
+}
+.positions-intro {
+  margin: 1.2rem 0 2rem;
+  font-size: 1.6rem !important;
+  line-height: 1.55;
+}
+.position-group {
+  border-top: 1px solid #d9dde1;
+}
+.position-group:last-of-type {
+  border-bottom: 1px solid #d9dde1;
+}
+.page article .position-group h3 {
+  margin: 0;
+  padding: 1.3rem 0 0.8rem;
+  color: #494e52;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.position-content {
+  padding: 0 0 1.4rem;
+}
+.page article .position-content p,
+.page article .position-content li {
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+.page article .position-content p {
+  margin: 0 0 1rem;
+}
+.position-content ul {
+  margin: 0.5rem 0 1.2rem;
+  padding-left: 2.2rem;
+}
+.page article .position-content li {
+  margin: 0.6rem 0;
 }
 .page article p,
 .page article li {
@@ -598,8 +749,47 @@ blockquote p {
   font-size: 1.4rem;
   text-decoration: none;
 }
+.author-links .email-item {
+  white-space: normal;
+}
+.author-links .email-link {
+  display: flex;
+  align-items: baseline;
+  line-height: 1.35;
+}
+.author-links .email-link span {
+  min-width: 0;
+  font-size: 1.05rem;
+  overflow-wrap: anywhere;
+}
 .author-links button {
   margin-bottom: 0px;
+}
+.table-of-contents {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e5e7e9;
+}
+.table-of-contents h2 {
+  margin: 0 0 0.7rem;
+  color: #494e52;
+  font-size: 1.6rem;
+}
+.table-of-contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.table-of-contents li {
+  margin: 0.35rem 0;
+}
+.table-of-contents a {
+  color: #4981da;
+  text-decoration: none;
+}
+.table-of-contents a:hover {
+  color: #c62641;
+  text-decoration: underline;
 }
 .btn {
   display: inline-block;
@@ -700,12 +890,18 @@ blockquote p {
   transition: all 0.2s ease-in-out;
 }
 .social-links .e-social-link {
+  display: flex;
+  align-items: baseline;
   color: #000;
 }
 .social-links .e-social-link .fa,
 .social-links .e-social-link .fas,
 .social-links .e-social-link .fab {
+  flex: 0 0 1.8rem;
+  width: 1.8rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 .social-links .e-social-link:hover span {
   text-decoration: underline;
@@ -749,6 +945,10 @@ blockquote p {
   }
   .sticky>* {
     display: block;
+  }
+  .sticky .card-wrap {
+    max-height: calc(100vh - 4em);
+    overflow-y: auto;
   }
   .author-avatar {
     display: block;
