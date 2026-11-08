@@ -647,6 +647,17 @@ blockquote p {
 .page article a:hover {
   color: #c62641;
 }
+.page article .news-paper-title {
+  color: #4981da;
+  font-style: italic;
+}
+.page article .news-award-link {
+  color: #c62641;
+  font-weight: 600;
+}
+.page article .news-award-link:hover {
+  color: #8c1515;
+}
 .page article .highlight {
   overflow: auto;
   margin: 0 0 1rem;
